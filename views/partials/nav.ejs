@@ -1,0 +1,27 @@
+<!-- bootstrap navbar -->
+<nav class="navbar-style navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="animated zoomInRight logo navbar-brand" href="/home">قانون</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="animated zoomInLeft navbar-item-style navbar-nav">
+                <% if(!currentUser){ %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/home/user/login">تسجيل دخول</a>
+                </li>
+                <% }else{ %>
+                <li class="nav-item">
+                    <p class="welcome-user">
+                            مرحباً <%= currentUser.username %> 
+                    </p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/home/user/logout">خروج</a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>

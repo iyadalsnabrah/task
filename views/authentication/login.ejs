@@ -1,0 +1,47 @@
+<% include ../partials/header %>
+<% include ../partials/nav %>
+
+
+<div class="login-background">
+  <!-- the back option div -->
+  <div class="login-signup-back animated fadeIn">
+    <div class="login-back">
+      <h2>لديك حساب ؟</h2>
+      <p> قم بالتسجيل بإستخدام الايمل الخاص بك و كلمة السر</p>
+      <p class="login-button">تسجيل</p>
+    </div>
+    <div class="signup-back">
+      <h2>ليس لديك حساب ؟</h2>
+      <p>قم بإنشاء حساب جديد بسهول و بشكل امن للحصول على اخر الاخبار </p>
+      <p class="signup-button">إنشاء حساب</p>
+    </div>
+  </div>
+  <!-- the above form option -->
+  <div class="login-signup-above">
+    <div class="login-signup-above-center">
+      <div class="login-signup-above-header">
+        <h2>تسجيل دخول</h2>
+      </div>
+
+    <!--   include the alert to view any error -->
+      <% include ../partials/alert %>
+      
+      <div class="login-signup-above-body">
+        <form action="/home/user/login" method="POST" class="form-style">
+          <div class="append-username form-group">
+
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder=" بريد الإلكتروني" required>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder=" كلمة المرور" required>
+          </div>
+          <button type="submit" class="submit-laws btn btn-primary btn-block">تسجيل </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include ../partials/footer %>

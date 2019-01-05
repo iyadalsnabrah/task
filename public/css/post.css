@@ -1,0 +1,21 @@
+.form-post{
+   margin: 90px auto 10px auto !important;
+   padding: 50px;
+   width: 50%;
+   background-color: gray;
+}
+.form-style{
+    width: 80%;
+    margin: 0 auto;
+}
+.new-law-button{
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+}
+.new-law-button:hover{
+    background-color: rgb(0, 231, 0);
+}

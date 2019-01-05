@@ -1,0 +1,199 @@
+.login-background {
+    background: url(../img/clickedlawbg.jpg)no-repeat center center;
+    background-size: cover;
+    padding: 100px 0 50px 0;
+    min-height: 100vh;
+}
+
+/* the back option div */
+.login-signup-back {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'El Messiri', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 75px white;
+    color: white;
+    transition-duration: 2s;
+}
+.signup-button,.login-button{
+    background-color: #007bff;
+    padding: 10px;
+    text-align:center ;
+    cursor: pointer;
+    width: 60%;
+}
+.login-button{
+    width: 60%;
+}
+.login-button:hover{
+    background-color: #004fa3;
+}
+.signup-button:hover{
+    background-color: #004fa3;
+}
+
+.signup-back,.login-back {
+    width: 40%;
+}
+/* the back option div end */
+
+/* the above form option  */
+.login-signup-above {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 30%;
+    height: 55%;
+    padding: 25px;
+    left: 67%;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+
+/* class for add animation move left to right */
+.moveltr {
+    animation: moveltr;
+    -webkit-animation: moveltr;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* class for add animation move right to left  */
+.movertl {
+    animation: movertl;
+    -webkit-animation: movertl;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* class for add animation move top to bottom  */
+.movettb {
+    animation: movettb;
+    -webkit-animation: movettb;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/* class for add animation move bottom to top */
+.movebtt {
+    animation: movebtt;
+    -webkit-animation: movebtt;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.login-signup-above-header{
+   padding-bottom: 20px; 
+}
+.login-signup-above-center{
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%)  ;
+   -webkit-transform: translateY(-50%)  ;
+   -moz-transform: translateY(-50%)  ;
+   -ms-transform: translateY(-50%)  ;
+   -o-transform: translateY(-50%)  ;
+}
+
+.submit-laws{
+    margin-top:25px;  
+}
+/* the above form option end */
+
+
+/* animation for the login-signup-above */
+/* move from right to left */
+@keyframes movertl {
+    0% {
+        left: 67%
+    }
+
+    100% {
+        left: 35%
+    }
+}
+
+/* animation for the login-signup-above */
+/* move from left to right */
+@keyframes moveltr {
+    0% {
+        left: 35%
+    }
+
+    100% {
+        left: 67%
+    }
+}
+
+/* animation for the login-signup-above */
+/* move from top to bottom */
+@keyframes movettb{
+    0%{
+        top: 40%;
+    }
+    100%{
+        top: 80%;
+    }
+}
+/* animation for the login-signup-above */
+/* move from bottom to top */
+@keyframes movebtt{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 40%;
+    }
+}
+
+
+@media (max-width:768px){
+    /* the back option div */
+    .login-background {  
+        height: 120vh;
+    }
+    .login-signup-back{
+        flex-direction: column; 
+        text-align: center;
+        width: 90%;
+        top: 60%;
+    }
+    .signup-back{
+        width: 100%;
+    }
+    .login-back{
+        width: 100%;
+        padding-bottom: 200px;
+    }
+    .signup-button,.login-button{
+        width: 55%;
+        margin: 0 auto;
+    }
+    /* the above form option  */
+    .login-signup-above {
+        height: 45%;
+        width: 80%;
+        left: 50%;
+        top: 40%;
+    }
+
+}

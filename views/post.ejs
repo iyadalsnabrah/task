@@ -1,0 +1,37 @@
+<% include partials/header %>
+<% include partials/nav %>
+
+<!-- form that allow to add new laws -->
+<div class="form-post">
+    <form action="/home/post/new" method="POST" class="form-style">
+        <div class="form-group">
+          <label >عنوان القانون</label>
+          <input type="text" class="form-control" name="law[title]" required>
+        </div>
+        <div class="form-group">
+          <label >عن القانون</label>
+          <input type="text" class="form-control" name="law[brief]" required>
+        </div>
+        <div class="form-group">
+          <label >سنة القانون</label>
+          <input type="text" class="form-control" name="law[year]" required>
+        </div>
+        <div class="form-group">
+          <label >رقم القانون</label>
+          <input type="text" class="form-control" name="law[lawNumber]" required> 
+        </div>
+        <div class="form-group">
+          <label > محتوى المادة رقم 1</label>
+          <input type="text" class="form-control" name="content[content1]" required>
+        </div>
+        <div class="new">
+
+        </div>
+
+        <p class="new-law-button">اضافة ماده جديدة</p>
+        <button type="submit" class="submit-laws btn btn-primary btn-block">اتمام عملية الاضافة</button>
+      </form>
+</div>
+
+
+<% include partials/footer %>

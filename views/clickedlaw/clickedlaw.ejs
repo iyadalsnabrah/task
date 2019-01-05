@@ -1,0 +1,51 @@
+<% include ../partials/header %>
+<% include ../partials/nav %>
+
+
+<div class="clicked-law-background">
+  <div class="animated zoomIn clicked-law">
+    <div class="animated rotateInDownRight clicked-law-header">
+      <div class="clicked-law-header-section1">
+        <div class="law-number">
+          <h4>رقم القانون</h4>
+          <h5>
+            <%= data.lawNumber %>
+          </h5>
+        </div>
+        <div class="law-title">
+          <h4>
+            <%= data.title %>
+          </h4>
+        </div>
+        <div class="law-year">
+          <h4>سنة القانون</h4>
+          <h5>
+            <%= data.year %>
+          </h5>
+        </div>
+      </div>
+      <div class="clicked-law-header-section2">
+        <h5>
+          <%= data.brief %>
+        </h5>
+      </div>
+    </div>
+    <div class="clicked-law-body">
+      <% data.content.forEach(contvalue=>{ %>
+      <div class="animated bounceInRight clicked-law-body-content">
+        <h4>المادة
+          <%= data.content.indexOf(contvalue)+1 %>
+        </h4>
+        <h5>
+          <%= contvalue %>
+        </h5>
+      </div>
+      <hr>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+
+
+<% include ../partials/footer %>

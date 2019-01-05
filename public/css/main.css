@@ -1,0 +1,25 @@
+@import "home.css";
+@import 'post.css';
+@import 'clickedlaw.css';
+@import 'authentication.css';
+
+
+/* bootstrap navbar  */
+.logo,
+.navbar-item-style a {
+    font-family: 'El Messiri', sans-serif;
+    color: white !important;
+}
+
+.logo:hover,
+.navbar-item-style a:hover {
+    color: red !important;
+}
+.navbar-style{
+    border-bottom: 1px solid red;
+}
+.welcome-user{
+    color: white;
+    padding-top: 6px;
+    padding-left: 20px;
+}

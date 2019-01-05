@@ -1,0 +1,35 @@
+<% include partials/header %>
+<% include partials/nav %>
+
+<!-- list of laws -->
+<div class="list-background">
+  <div class="animated bounceInDown list">
+    <div class="list-header">
+      <h2>عرض القوانين المتعلقه بضريبة الدخل</h2>
+    </div>
+    <div class="list-body">
+
+      <!-- get the data from the backend(db) -->
+      <!-- loop to each data and design a list of laws  -->
+      <% data.forEach(value=>{ %>
+      <a href="home/article/<%= value._id %>">
+        <div class="list-laws">
+          <div class="laws-icon">
+            <i class="fas fa-paste"></i>
+          </div>
+          <div class="list-content">
+            <h2>
+              <%= value.title %>
+            </h2>
+            <p>
+              <%= value.brief %>
+            </p>
+          </div>
+        </div>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer %>
