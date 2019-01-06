@@ -9,7 +9,7 @@ https://nodejs.org/en/  <br>
 4-type <code>cd <code> and the file directory <br> 
   
 5-install the libraries <br>
-<code>npm i</code> br>
+<code>npm i</code> <br>
 
 6-to start the server type<br>
 <code>node app.js</code> <br>
